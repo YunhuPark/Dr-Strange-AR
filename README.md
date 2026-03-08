@@ -57,7 +57,7 @@ npm install
 npm run dev
 ```
 
-브라우저에서 http://localhost:5173 접속 후 웹캠 권한을 허용하面 자동으로 시작됩니다.
+브라우저에서 http://localhost:5173 접속 후 웹캠 권한을 허용하면 자동으로 시작됩니다.
 
 ---
 
