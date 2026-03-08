@@ -1,0 +1,68 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#ar-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Three.js renders both webcam texture and 3D objects */
+  display: block;
+  transform: scaleX(-1);
+  /* Mirror the webcam feed */
+}
+
+#ui-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #ffaa00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#status-text {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #00ffaa;
+}
+
+.mode-indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mode-indicator span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.mode-indicator span.active {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}

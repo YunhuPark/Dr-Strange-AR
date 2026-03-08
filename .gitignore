@@ -1,0 +1,24 @@
+# Root level gitignore
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+
+# Python patches (dev only)
+patch_dormammu.py
+patch_dormammu_lines.py
+
+# Web
+web/node_modules/
+web/dist/
+web/dist-ssr/
+*.local
+*.log
+
+# Misc
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

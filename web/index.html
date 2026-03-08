@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Strange AR</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Webcam Feed (Hidden but playing, rendered to canvas or beneath) -->
+  <video id="webcam" autoplay playsinline
+    style="position: absolute; opacity: 0; pointer-events: none; width: 1px; height: 1px;"></video>
+
+  <!-- Three.js Canvas -->
+  <canvas id="ar-canvas"></canvas>
+
+  <!-- UI Overlay -->
+  <div id="ui-container">
+    <h1>Dr. Strange AR</h1>
+    <p id="status-text">Initializing...</p>
+    <div class="mode-indicator" id="mode-indicator">
+      <span class="active" data-mode="1">[1] ✊ Tao Mandalas — 양손 주먹</span>
+      <span data-mode="2">[2] 🤙 Sling Ring — 양손 총 모양 → 원 그리기 → 유지 시 포탈 오픈</span>
+      <span data-mode="3">[3] 🖐️ Time Stone — 한 손 손바닥 펼치기</span>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
